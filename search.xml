@@ -47,18 +47,6 @@
       </categories>
   </entry>
   <entry>
-    <title>my first blog</title>
-    <url>/2020/04/25/my-first-blog/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.codesheep.com" target="_blank" rel="noopener">www.codesheep.com</a><br><a href="http://www.hust.edu.cn" target="_blank" rel="noopener">www.hust.edu.cn</a></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-        <category>blog</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2020/04/25/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -75,5 +63,17 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>my first blog</title>
+    <url>/2020/04/25/my-first-blog/</url>
+    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.codesheep.com" target="_blank" rel="noopener">www.codesheep.com</a><br><a href="http://www.hust.edu.cn" target="_blank" rel="noopener">www.hust.edu.cn</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+        <category>blog</category>
+      </categories>
   </entry>
 </search>
