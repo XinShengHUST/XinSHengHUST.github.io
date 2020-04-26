@@ -321,7 +321,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/04/26/Hexo-github%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/" itemprop="url">Hexo+github博客基础设置</a></h1>
+                <a class="post-title-link" href="/2020/04/26/Hexo-github%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/" itemprop="url">Hexo+github+next主题博客双语基础设置</a></h1>
         
 
         <div class="post-meta">
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  214 字
+                  492 字
                 </span>
               
 
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -455,8 +455,23 @@
 <h1 id="初始化英文博客"><a href="#初始化英文博客" class="headerlink" title="初始化英文博客"></a>初始化英文博客</h1><p>利用Hexo初始化英文博客：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blogen</span><br></pre></td></tr></table></figure>
 
-<p>将next主题从 ‘/e/shengxinblog/themes/next’ 拷贝到 /e/shengxinblog/blogen/themes/next，并修改/e/shengxinblog/blogen/下的_config.yml，将其中的theme字段改为theme:next，这样英文博客的主题被修改为next，与中文博客保持一致。</p>
+<p>将next主题从 <label style="color:purple">/e/shengxinblog/themes/next</label> 拷贝到 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label>，并修改 <label style="color:purple">/e/shengxinblog/blogen/</label> 下的_config.yml文件，将其中的theme字段改为theme:next，这样英文博客的主题被修改为next，与中文博客保持一致。</p>
+<p>分别修改中英文博客文件夹下的主题配置文件,在中文主题配置文件 <label style="color:purple">/e/shengxinblog/themes/next</label> 中加入英文博客入口(<label style="color:red">请在下面代码中的英文行中填写自己的github.io地址</label>)：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  英文: https://xinshenghust.github.io/en||language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
+
+<p>在英文主题配置文件 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label> 中加入中文博客入口(<label style="color:red">请在下面代码中的cn行中填写自己的github.io地址</label>)：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/|| tags</span><br><span class="line">  cn: https://xinshenghust.github.io|| language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
+
 <hr>
+<p>#命令行部署<br>在中文blog文件夹中利用hexo命令生成blog文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /e/shengxinblog/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<p>在英文blog文件夹中利用hexo命令生成blog文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ./blogen/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
+<p>将 <label style="color:purple">/e/shengxinblog/blogen/public/</label> 中的文件复制到 <label style="color:purple">/e/shengxinblog/public/en/</label> 下，并将blog部署到github上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ..</span><br><span class="line">$ cp -r blogen/public/. ./public/en/</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>部署完成后，在中英文文件夹中分别撰写博客即可。</p>
 
           
         
