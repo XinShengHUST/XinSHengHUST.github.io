@@ -416,7 +416,7 @@
       
         
           <p><strong>课程名称</strong>： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】<br><strong>课程网址</strong>： <a href="https://www.bilibili.com/video/BV1at411d79w?p=10" target="_blank" rel="noopener">bilibili课程链接</a><br><strong>课程老师</strong>： Gilbert Strang<br><strong>课程单元</strong>： 第10讲（四个基本子空间 The Four Fundamental Subspaces）</p>
-<hr>
+<h2 id><a href="#" class="headerlink" title></a></h2>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2020/04/28/MIT%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/#more" rel="contents">
@@ -604,225 +604,15 @@
 
       
         
-          
-            <p><strong>操作系统</strong>：windows7<br><strong>静态博客系统</strong>： Hexo<br><strong>服务器</strong>： github.io<br><strong>博客主题</strong>: next</p>
-<hr>
-<h1 id="创建英文博客文件夹"><a href="#创建英文博客文件夹" class="headerlink" title="创建英文博客文件夹"></a>创建英文博客文件夹</h1><p>本人博客所在文件夹为:  </p>
-<blockquote>
-<p>/e/shengxinblog</p>
-</blockquote>
-<p>windows7下建议先安装好git，便于后续操作。</p>
-<p><a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">git for windows国内镜像站</a> (下载速度较快)</p>
-<p>安装好git for windows后，在任意文件夹下,右键点击Git Bash Here, 打开控制台，并cd到博客所在文件夹:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /e/shengxinblog/</span><br></pre></td></tr></table></figure>
-<p>在该文件夹下新建一个英文博客子文件夹blogen：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blogen</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="初始化英文博客"><a href="#初始化英文博客" class="headerlink" title="初始化英文博客"></a>初始化英文博客</h1><p>利用Hexo初始化英文博客：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blogen</span><br></pre></td></tr></table></figure>
-<p>将next主题从 <label style="color:purple">/e/shengxinblog/themes/next</label> 拷贝到 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label>，并修改 <label style="color:purple">/e/shengxinblog/blogen/</label> 下的_config.yml文件，将其中的theme字段改为theme:next，这样英文博客的主题被修改为next，与中文博客保持一致。</p>
-<p>分别修改中英文博客文件夹下的主题配置文件,在中文主题配置文件 <label style="color:purple">/e/shengxinblog/themes/next</label> 中加入英文博客入口(<label style="color:red">请在下面代码中的英文行中填写自己的github.io地址</label>)：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  英文: https://xinshenghust.github.io/en||language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
-<p>在英文主题配置文件 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label> 中加入中文博客入口(<label style="color:red">请在下面代码中的cn行中填写自己的github.io地址</label>)：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/|| tags</span><br><span class="line">  cn: https://xinshenghust.github.io|| language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="命令行部署"><a href="#命令行部署" class="headerlink" title="命令行部署"></a>命令行部署</h1><p>在中文blog文件夹中利用hexo命令生成blog文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /e/shengxinblog/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p>在英文blog文件夹中利用hexo命令生成blog文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ./blogen/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p>将 <label style="color:purple">/e/shengxinblog/blogen/public/</label> 中的文件复制到 <label style="color:purple">/e/shengxinblog/public/en/</label> 下，并将blog部署到github上：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ..</span><br><span class="line">$ cp -r blogen/public/. ./public/en/</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>部署完成后，在中英文文件夹中分别撰写博客即可。</p>
-<hr>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p><a href="https://www.dazhuanlan.com/2019/12/05/5de88da54789a/" target="_blank" rel="noopener">https://www.dazhuanlan.com/2019/12/05/5de88da54789a/</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/25/my-first-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="盛鑫(Xin Sheng)">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="盛鑫的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/25/my-first-blog/" itemprop="url">my first blog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-25T22:07:19+08:00">
-                2020-04-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/blog/" itemprop="url" rel="index">
-                    <span itemprop="name">blog</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  15 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>www.codesheep.com<br>www.hust.edu.cn</p>
-
-          
+          <p><strong>操作系统</strong>：windows7<br><strong>静态博客系统</strong>： Hexo<br><strong>服务器</strong>： github.io<br><strong>博客主题</strong>: next</p>
+<h2 id><a href="#" class="headerlink" title></a></h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/26/Hexo-github%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -970,18 +760,14 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/04/25/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1065,7 +851,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1076,7 +862,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
