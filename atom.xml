@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>盛鑫的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-29T14:38:18.327Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>盛鑫(Xin Sheng)</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MIT线性代数课程笔记</title>
+    <link href="http://yoursite.com/2020/04/28/MIT%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2020/04/28/MIT%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-04-28T15:12:04.000Z</published>
+    <updated>2020-04-29T14:38:18.327Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;课程名称&lt;/strong&gt;： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】&lt;br&gt;&lt;strong&gt;课程网址&lt;/strong&gt;： &lt;a href=&quot;https://www.bilibili.com/video/BV1at411d79w?p=10&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;bilibili课程链接&lt;/a&gt;&lt;br&gt;&lt;strong&gt;课程老师&lt;/strong&gt;： Gilbert Strang&lt;br&gt;&lt;strong&gt;课程单元&lt;/strong&gt;： 第10讲（四个基本子空间 The Four Fundamental Subspaces）&lt;/p&gt;
+&lt;h2 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="线性代数" scheme="http://yoursite.com/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+github+next主题博客双语基础设置</title>
+    <link href="http://yoursite.com/2020/04/26/Hexo-github%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/2020/04/26/Hexo-github%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</id>
+    <published>2020-04-26T06:29:23.000Z</published>
+    <updated>2020-04-29T14:39:20.142Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;操作系统&lt;/strong&gt;：windows7&lt;br&gt;&lt;strong&gt;静态博客系统&lt;/strong&gt;： Hexo&lt;br&gt;&lt;strong&gt;服务器&lt;/strong&gt;： github.io&lt;br&gt;&lt;strong&gt;博客主题&lt;/strong&gt;: next&lt;/p&gt;
+&lt;h2 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/categories/hexo/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/04/25/hello-world/"/>
+    <id>http://yoursite.com/2020/04/25/hello-world/</id>
+    <published>2020-04-25T13:57:58.310Z</published>
+    <updated>2020-04-29T14:39:08.663Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
