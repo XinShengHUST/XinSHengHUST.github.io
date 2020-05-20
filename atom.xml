@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-20T10:01:42.760Z</updated>
+  <updated>2020-05-20T11:10:55.785Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下打包所有库发布包含QT界面的C++程序（简易项目）</title>
+    <link href="http://yoursite.com/2020/05/20/linuxqtapp/"/>
+    <id>http://yoursite.com/2020/05/20/linuxqtapp/</id>
+    <published>2020-05-20T10:06:34.000Z</published>
+    <updated>2020-05-20T11:10:55.785Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;操作系统&lt;/strong&gt;： Ubuntu&lt;br&gt;&lt;strong&gt;软件&lt;/strong&gt;: Qt Creator, linuxdeployqt&lt;br&gt;&lt;strong&gt;编程语言&lt;/strong&gt;: C++&lt;/p&gt;
+&lt;p&gt;C++项目通常依赖第三方库，有时候还需要
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+      <category term="Qt" scheme="http://yoursite.com/categories/Linux/Qt/"/>
+    
+      <category term="应用程序" scheme="http://yoursite.com/categories/Linux/Qt/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>MIT线性代数课程笔记</title>
