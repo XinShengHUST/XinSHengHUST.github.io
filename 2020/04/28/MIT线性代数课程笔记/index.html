@@ -90,14 +90,14 @@
 
 
 
-<meta name="description" content="课程名称： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】课程网址： bilibili课程链接课程老师： Gilbert Strang课程单元： 第10讲（四个基本子空间 The Four Fundamental Subspaces）">
+<meta name="description" content="课程名称： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】课程网址： bilibili课程链接课程老师： Gilbert Strang课程单元： 第10讲（四个基本子空间 The Four Fundamental Subspaces）博客说明： 个人笔记存档">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MIT线性代数课程笔记">
 <meta property="og:url" content="http://yoursite.com/2020/04/28/MIT%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="盛鑫的博客">
-<meta property="og:description" content="课程名称： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】课程网址： bilibili课程链接课程老师： Gilbert Strang课程单元： 第10讲（四个基本子空间 The Four Fundamental Subspaces）">
+<meta property="og:description" content="课程名称： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】课程网址： bilibili课程链接课程老师： Gilbert Strang课程单元： 第10讲（四个基本子空间 The Four Fundamental Subspaces）博客说明： 个人笔记存档">
 <meta property="article:published_time" content="2020-04-28T15:12:04.000Z">
-<meta property="article:modified_time" content="2020-04-29T14:38:18.327Z">
+<meta property="article:modified_time" content="2020-05-20T10:01:42.760Z">
 <meta property="article:author" content="盛鑫(Xin Sheng)">
 <meta name="twitter:card" content="summary">
 
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  559 字
+                  64 字
                 </span>
               
 
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 分钟
+                  1 分钟
                 </span>
               
             </div>
@@ -427,34 +427,8 @@
       
 
       
-        <p><strong>课程名称</strong>： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】<br><strong>课程网址</strong>： <a href="https://www.bilibili.com/video/BV1at411d79w?p=10" target="_blank" rel="noopener">bilibili课程链接</a><br><strong>课程老师</strong>： Gilbert Strang<br><strong>课程单元</strong>： 第10讲（四个基本子空间 The Four Fundamental Subspaces）</p>
-<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><h1 id="四个基础子空间的定义"><a href="#四个基础子空间的定义" class="headerlink" title="四个基础子空间的定义"></a>四个基础子空间的定义</h1><p>对于一个矩阵$A$，前面的课程已经提到了零空间和列空间，此次课程中提到的两个子空间分别为行空间（即） </p>
-<blockquote>
-<p>/e/shengxinblog</p>
-</blockquote>
-<p>windows7下建议先安装好git，便于后续操作。</p>
-<p><a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">git for windows国内镜像站</a> (下载速度较快)</p>
-<p>安装好git for windows后，在任意文件夹下,右键点击Git Bash Here, 打开控制台，并cd到博客所在文件夹:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /e/shengxinblog/</span><br></pre></td></tr></table></figure>
-<p>在该文件夹下新建一个英文博客子文件夹blogen：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blogen</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="初始化英文博客"><a href="#初始化英文博客" class="headerlink" title="初始化英文博客"></a>初始化英文博客</h1><p>利用Hexo初始化英文博客：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blogen</span><br></pre></td></tr></table></figure>
-<p>将next主题从 <label style="color:purple">/e/shengxinblog/themes/next</label> 拷贝到 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label>，并修改 <label style="color:purple">/e/shengxinblog/blogen/</label> 下的_config.yml文件，将其中的theme字段改为theme:next，这样英文博客的主题被修改为next，与中文博客保持一致。</p>
-<p>分别修改中英文博客文件夹下的主题配置文件,在中文主题配置文件 <label style="color:purple">/e/shengxinblog/themes/next</label> 中加入英文博客入口(<label style="color:red">请在下面代码中的英文行中填写自己的github.io地址</label>)：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  英文: https://xinshenghust.github.io/en||language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
-<p>在英文主题配置文件 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label> 中加入中文博客入口(<label style="color:red">请在下面代码中的cn行中填写自己的github.io地址</label>)：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/|| tags</span><br><span class="line">  cn: https://xinshenghust.github.io|| language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="命令行部署"><a href="#命令行部署" class="headerlink" title="命令行部署"></a>命令行部署</h1><p>在中文blog文件夹中利用hexo命令生成blog文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /e/shengxinblog/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p>在英文blog文件夹中利用hexo命令生成blog文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ./blogen/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p>将 <label style="color:purple">/e/shengxinblog/blogen/public/</label> 中的文件复制到 <label style="color:purple">/e/shengxinblog/public/en/</label> 下，并将blog部署到github上：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ..</span><br><span class="line">$ cp -r blogen/public/. ./public/en/</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>部署完成后，在中英文文件夹中分别撰写博客即可。</p>
-
+        <p><strong>课程名称</strong>： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】<br><strong>课程网址</strong>： <a href="https://www.bilibili.com/video/BV1at411d79w?p=10" target="_blank" rel="noopener">bilibili课程链接</a><br><strong>课程老师</strong>： Gilbert Strang<br><strong>课程单元</strong>： 第10讲（四个基本子空间 The Four Fundamental Subspaces）<br><strong>博客说明</strong>： 个人笔记存档</p>
+<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2>
       
     </div>
     
@@ -622,7 +596,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四个基础子空间的定义"><span class="nav-number"></span> <span class="nav-text">四个基础子空间的定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化英文博客"><span class="nav-number"></span> <span class="nav-text">初始化英文博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命令行部署"><span class="nav-number"></span> <span class="nav-text">命令行部署</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></div>
             
 
           </div>
