@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-21T05:39:25.597Z</updated>
+  <updated>2020-05-22T15:44:32.979Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C++下使用chrono库进行准确计时</title>
+    <link href="http://yoursite.com/2020/05/22/C-%E4%B8%8B%E4%BD%BF%E7%94%A8chrono%E5%BA%93%E8%BF%9B%E8%A1%8C%E5%87%86%E7%A1%AE%E8%AE%A1%E6%97%B6/"/>
+    <id>http://yoursite.com/2020/05/22/C-%E4%B8%8B%E4%BD%BF%E7%94%A8chrono%E5%BA%93%E8%BF%9B%E8%A1%8C%E5%87%86%E7%A1%AE%E8%AE%A1%E6%97%B6/</id>
+    <published>2020-05-22T15:31:03.000Z</published>
+    <updated>2020-05-22T15:44:32.979Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;c++中一般的计时代码计时有时候不太准确，可以使用chrono库所带的计时函数进行计时，代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Linux下打包所有库发布包含QT界面的C++程序（简易项目）</title>
     <link href="http://yoursite.com/2020/05/20/linuxqtapp/"/>
     <id>http://yoursite.com/2020/05/20/linuxqtapp/</id>
     <published>2020-05-20T10:06:34.000Z</published>
-    <updated>2020-05-21T05:39:25.597Z</updated>
+    <updated>2020-05-22T15:26:37.241Z</updated>
     
     <summary type="html">
     
