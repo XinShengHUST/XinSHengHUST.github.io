@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MIT线性代数课程笔记</title>
+    <url>/2020/04/28/MIT%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>课程名称</strong>： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】<br><strong>课程网址</strong>： <a href="https://www.bilibili.com/video/BV1at411d79w?p=10" target="_blank" rel="noopener">bilibili课程链接</a><br><strong>课程老师</strong>： Gilbert Strang<br><strong>课程单元</strong>： 第10讲（四个基本子空间 The Four Fundamental Subspaces）<br><strong>博客说明</strong>： 个人笔记存档<br><a id="more"></a></p>
+]]></content>
+      <categories>
+        <category>线性代数</category>
+      </categories>
+  </entry>
+  <entry>
     <title>C++下使用chrono库进行准确计时</title>
     <url>/2020/05/22/C-%E4%B8%8B%E4%BD%BF%E7%94%A8chrono%E5%BA%93%E8%BF%9B%E8%A1%8C%E5%87%86%E7%A1%AE%E8%AE%A1%E6%97%B6/</url>
     <content><![CDATA[<p>c++中一般的计时代码计时有时候不太准确，可以使用chrono库所带的计时函数进行计时。</p>
@@ -8,15 +17,6 @@
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">std</span>::chrono::steady_clock::time_point time_start = <span class="built_in">std</span>::chrono::steady_clock::now();</span><br><span class="line"></span><br><span class="line"><span class="comment">//YOUR CODE 需要计时的代码</span></span><br><span class="line">   </span><br><span class="line"><span class="built_in">std</span>::chrono::steady_clock::time_point time_end = <span class="built_in">std</span>::chrono::steady_clock::now();</span><br><span class="line"><span class="keyword">auto</span> time = <span class="built_in">std</span>::chrono::duration_cast&lt;<span class="built_in">std</span>::chrono::microseconds&gt;(time_end - time_start).count()/<span class="number">1000.0</span>;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"time use is: "</span> &lt;&lt; time &lt;&lt; <span class="string">" ms"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>C++</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>MIT线性代数课程笔记</title>
-    <url>/2020/04/28/MIT%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p><strong>课程名称</strong>： 麻省理工 线性代数 (MIT 18.06, Linear Algebra, Gilbert Strang)【中英】<br><strong>课程网址</strong>： <a href="https://www.bilibili.com/video/BV1at411d79w?p=10" target="_blank" rel="noopener">bilibili课程链接</a><br><strong>课程老师</strong>： Gilbert Strang<br><strong>课程单元</strong>： 第10讲（四个基本子空间 The Four Fundamental Subspaces）<br><strong>博客说明</strong>： 个人笔记存档<br><a id="more"></a></p>
-]]></content>
-      <categories>
-        <category>线性代数</category>
       </categories>
   </entry>
   <entry>
