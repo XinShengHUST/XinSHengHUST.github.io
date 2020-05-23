@@ -97,7 +97,7 @@
 <meta property="og:site_name" content="盛鑫的博客">
 <meta property="og:description" content="操作系统：windows7静态博客系统： Hexo服务器： github.io博客主题: next">
 <meta property="article:published_time" content="2020-04-26T06:29:23.000Z">
-<meta property="article:modified_time" content="2020-04-29T14:39:20.142Z">
+<meta property="article:modified_time" content="2020-05-23T02:29:18.390Z">
 <meta property="article:author" content="盛鑫(Xin Sheng)">
 <meta name="twitter:card" content="summary">
 
@@ -439,7 +439,7 @@
 
       
         <p><strong>操作系统</strong>：windows7<br><strong>静态博客系统</strong>： Hexo<br><strong>服务器</strong>： github.io<br><strong>博客主题</strong>: next</p>
-<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><h1 id="创建英文博客文件夹"><a href="#创建英文博客文件夹" class="headerlink" title="创建英文博客文件夹"></a>创建英文博客文件夹</h1><p>本人博客所在文件夹为:  </p>
+<h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2><h2 id="创建英文博客文件夹"><a href="#创建英文博客文件夹" class="headerlink" title="创建英文博客文件夹"></a>创建英文博客文件夹</h2><p>本人博客所在文件夹为:  </p>
 <blockquote>
 <p>/e/shengxinblog</p>
 </blockquote>
@@ -450,7 +450,7 @@
 <p>在该文件夹下新建一个英文博客子文件夹blogen：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blogen</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="初始化英文博客"><a href="#初始化英文博客" class="headerlink" title="初始化英文博客"></a>初始化英文博客</h1><p>利用Hexo初始化英文博客：</p>
+<h2 id="初始化英文博客"><a href="#初始化英文博客" class="headerlink" title="初始化英文博客"></a>初始化英文博客</h2><p>利用Hexo初始化英文博客：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blogen</span><br></pre></td></tr></table></figure>
 <p>将next主题从 <label style="color:purple">/e/shengxinblog/themes/next</label> 拷贝到 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label>，并修改 <label style="color:purple">/e/shengxinblog/blogen/</label> 下的_config.yml文件，将其中的theme字段改为theme:next，这样英文博客的主题被修改为next，与中文博客保持一致。</p>
 <p>分别修改中英文博客文件夹下的主题配置文件,在中文主题配置文件 <label style="color:purple">/e/shengxinblog/themes/next</label> 中加入英文博客入口(<label style="color:red">请在下面代码中的英文行中填写自己的github.io地址</label>)：</p>
@@ -458,7 +458,7 @@
 <p>在英文主题配置文件 <label style="color:purple">/e/shengxinblog/blogen/themes/next</label> 中加入中文博客入口(<label style="color:red">请在下面代码中的cn行中填写自己的github.io地址</label>)：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /|| home</span><br><span class="line">  about: /about/|| user</span><br><span class="line">  categories: /categories/|| th</span><br><span class="line">  tags: /tags/|| tags</span><br><span class="line">  cn: https://xinshenghust.github.io|| language</span><br><span class="line">  archives: /archives/|| archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="命令行部署"><a href="#命令行部署" class="headerlink" title="命令行部署"></a>命令行部署</h1><p>在中文blog文件夹中利用hexo命令生成blog文件：</p>
+<h2 id="命令行部署"><a href="#命令行部署" class="headerlink" title="命令行部署"></a>命令行部署</h2><p>在中文blog文件夹中利用hexo命令生成blog文件：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /e/shengxinblog/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
 <p>在英文blog文件夹中利用hexo命令生成blog文件：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ./blogen/</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
@@ -466,7 +466,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ..</span><br><span class="line">$ cp -r blogen/public/. ./public/en/</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p>部署完成后，在中英文文件夹中分别撰写博客即可。</p>
 <hr>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p><a href="https://www.dazhuanlan.com/2019/12/05/5de88da54789a/" target="_blank" rel="noopener">https://www.dazhuanlan.com/2019/12/05/5de88da54789a/</a></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://www.dazhuanlan.com/2019/12/05/5de88da54789a/" target="_blank" rel="noopener">https://www.dazhuanlan.com/2019/12/05/5de88da54789a/</a></p>
 
       
     </div>
@@ -673,7 +673,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建英文博客文件夹"><span class="nav-number"></span> <span class="nav-text">创建英文博客文件夹</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化英文博客"><span class="nav-number"></span> <span class="nav-text">初始化英文博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命令行部署"><span class="nav-number"></span> <span class="nav-text">命令行部署</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number"></span> <span class="nav-text">参考文献</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建英文博客文件夹"><span class="nav-number">2.</span> <span class="nav-text">创建英文博客文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化英文博客"><span class="nav-number">3.</span> <span class="nav-text">初始化英文博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令行部署"><span class="nav-number">4.</span> <span class="nav-text">命令行部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">5.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
