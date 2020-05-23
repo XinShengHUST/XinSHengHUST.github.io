@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>C++下使用chrono库进行准确计时</title>
-    <url>/2020/05/22/C-%E4%B8%8B%E4%BD%BF%E7%94%A8chrono%E5%BA%93%E8%BF%9B%E8%A1%8C%E5%87%86%E7%A1%AE%E8%AE%A1%E6%97%B6/</url>
-    <content><![CDATA[<a id="more"></a>
-<p>c++中一般的计时代码计时有时候不太准确，可以使用chrono库所带的计时函数进行计时，代码如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">std</span>::chrono::steady_clock::time_point time_start = <span class="built_in">std</span>::chrono::steady_clock::now();</span><br><span class="line"></span><br><span class="line"><span class="comment">//YOUR CODE 需要计时的代码</span></span><br><span class="line">   </span><br><span class="line"><span class="built_in">std</span>::chrono::steady_clock::time_point time_end = <span class="built_in">std</span>::chrono::steady_clock::now();</span><br><span class="line"><span class="keyword">auto</span> time = <span class="built_in">std</span>::chrono::duration_cast&lt;<span class="built_in">std</span>::chrono::microseconds&gt;(time_end - time_start).count()/<span class="number">1000.0</span>;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"time use is: "</span> &lt;&lt; time &lt;&lt; <span class="string">" ms"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo+github+next主题博客双语基础设置</title>
     <url>/2020/04/26/Hexo-github%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p><strong>操作系统</strong>：windows7<br><strong>静态博客系统</strong>： Hexo<br><strong>服务器</strong>： github.io<br><strong>博客主题</strong>: next</p>
@@ -55,6 +45,17 @@
 <h2 id><a href="#" class="headerlink" title></a><a id="more"></a></h2>]]></content>
       <categories>
         <category>线性代数</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>C++下使用chrono库进行准确计时</title>
+    <url>/2020/05/22/C-%E4%B8%8B%E4%BD%BF%E7%94%A8chrono%E5%BA%93%E8%BF%9B%E8%A1%8C%E5%87%86%E7%A1%AE%E8%AE%A1%E6%97%B6/</url>
+    <content><![CDATA[<p>c++中一般的计时代码计时有时候不太准确，可以使用chrono库所带的计时函数进行计时。</p>
+<a id="more"></a>
+<p>代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="built_in">std</span>::chrono::steady_clock::time_point time_start = <span class="built_in">std</span>::chrono::steady_clock::now();</span><br><span class="line"></span><br><span class="line"><span class="comment">//YOUR CODE 需要计时的代码</span></span><br><span class="line">   </span><br><span class="line"><span class="built_in">std</span>::chrono::steady_clock::time_point time_end = <span class="built_in">std</span>::chrono::steady_clock::now();</span><br><span class="line"><span class="keyword">auto</span> time = <span class="built_in">std</span>::chrono::duration_cast&lt;<span class="built_in">std</span>::chrono::microseconds&gt;(time_end - time_start).count()/<span class="number">1000.0</span>;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"time use is: "</span> &lt;&lt; time &lt;&lt; <span class="string">" ms"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>C++</category>
       </categories>
   </entry>
   <entry>
